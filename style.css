@@ -31,7 +31,9 @@ body {
 h1 {
   color: #1d4ed8;
   -webkit-text-stroke: #000 .5px;
+  padding: 0 -20px;
   margin-bottom: 20px;
+  font-size: 1.9rem;
 }
 
 form {
