@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Job Search Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LinkedIn Job Search Generator</h1>
+        <form id="job-search-form" onsubmit="generateLinkedInUrl()">
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" placeholder="e.g., Data Analyst, Software Engineer" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" value="Bengaluru, India" placeholder="e.g., Bengaluru, India" required>
+
+            <label for="experienceLevel">Experience Level:</label>
+            <select id="experienceLevel" required>
+                <option value="1">Internship</option>
+                <option value="2">Entry Level</option>
+                <option value="3">Associate</option>
+                <option value="4">Mid-Senior</option>
+                <option value="5">Director</option>
+            </select>
+
+            <label for="company">Company (optional):</label>
+            <input type="text" id="company" placeholder="e.g., Google">
+
+            <label for="jobType">Job Type:</label>
+            <select id="jobType">
+                <option value="">Any</option>
+                <option value="F">Full-Time</option>
+                <option value="P">Part-Time</option>
+                <option value="C">Contract</option>
+                <option value="T">Temporary</option>
+                <option value="V">Volunteer</option>
+            </select>
+
+            <label for="datePosted">Date Posted:</label>
+            <select id="datePosted">
+                <option value="">Any Time</option>
+                <option value="r86400">Past 24 hours</option>
+                <option value="r604800">Past Week</option>
+            </select>
+
+            <button type="submit">Generate URL</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
